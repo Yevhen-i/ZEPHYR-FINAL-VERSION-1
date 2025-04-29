@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Zephyr Airlines | Manage Booking</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<link rel="stylesheet" href="assets/css/style.css"/>
+		<link rel="icon" href="images/zephyr-favicon.svg" type="image/svg+xml" sizes="16x16">	
+	</head>
+	<body class="is-preload homepage">
+		<div id="page-wrapper">
+				<div id="header-wrapper">
+					<header id="header" class="header container">
+				
+						<!-- Logo -->
+							<a href="index.html" class="header__logo" id="logo">
+								<img src="./images/Zephyr-logo.svg" alt="Zephyr logo-1">
+							</a>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="current"><a href="index.html">HOME</a></li>
+									<li><a href="about-us.html">ABOUT US</a></li>
+									<li><a href="flights.html">FLIGHTS</a></li>
+									<li><a href="hotels.html">HOTELS</a></li>
+								</ul>
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Banner -->
+
+				<div id="banner-wrapper">
+					<div id="banner" class="box container">
+						<div class="row">
+							<div class="col-7 col-12-medium">
+								<h2 class="title">Welcome to <em>Booking form</em></h2>
+								<!-- Form. Insparation from: kayak.com -->
+								<form action="#" class="form">
+										<legend>Look up flights seamlessfly.</legend>
+										<div class="form__group select">
+											<select name="trip" id="trip">
+												<option selected value="Round-trip">Round-trip</option>
+												<option value="One-way">One-way</option>
+											</select>
+										</div>
+										<div class="form__body">
+											<section class="form__group direction">
+												<label for="direction" class="form__direction form__direction-from">
+													<div class="direction__results">
+														<input required placeholder="From?" class="direction-from direction__input main-input" name="from" type="text">
+													</div>
+													<div class="direction__airports airports airports-departure">
+														<ul class="airports__list">
+														</ul>
+													</div>
+												</label>
+												<button type="button" class="reverse-button">
+													<svg viewBox="0 0 200 200" width="1.25em" height="1.25em" xmlns="http://www.w3.org/2000/svg" class="z8m1-icon" role="presentation"><path d="M56.238 154.801c-25.271-30.326-30.335-33.201-25-39.603l25-30l11.523 9.603L53.013 112.5H120v15H53.013l14.749 17.699l-11.524 9.602zm86.524-40l-11.523-9.603L145.987 87.5H80v-15h65.987l-14.749-17.699l11.523-9.603l25 30c5.335 6.403.272 9.278-24.999 39.603z"></path></svg>
+												</button>
+												<label for="direction"  class="form__direction form__direction-to">
+													<div class="direction__results">
+														<input required placeholder="To?" class="direction-to direction__input main-input" name="to" type="text">
+													</div>
+													<div class="direction__airports airports airports-arrival">
+														<ul class="airports__list">
+														</ul>
+													</div>
+												</label>
+											</section>
+											<section class="form__group dates">
+												<label for="dates">
+													<p class="dates__error">You cannot view past flights!</p>
+													<input required placeholder="Departure date" class="departure-date main-input today" name="today" type="date">
+												</label>
+												<label for="dates">
+													<p class="dates__error">You cannot view past flights!</p>
+													<input required placeholder="Return date" class="return-date main-input tommorow" name="tommorow" type="date">
+												</label>
+											</section>
+											<section class="passanger">
+												<span class="passanger__button">1 passanger, economy, 0 bag</span>
+												<div class="passanger__dropdown dropdown">
+													<button type="button"><span class="icon icon-cross"></span></button>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Adults</h4>
+														<p class="category__description">Age 18-64</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="children" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Students</h4>
+														<p class="category__description">Over 18</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="infants" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Seniors</h4>
+														<p class="category__description">Over 65</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="adults" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Youths</h4>
+														<p class="category__description">Age 12-17</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="adults" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Children</h4>
+														<p class="category__description">Age 2-11</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="adults" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Toddlers</h4>
+														<p class="category__description">Age under 2</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="adults" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h4 class="category__title">Infants</h4>
+														<p class="category__description">Age under 2</p>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="adults" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h3 class="category__title category__title-big">Class</h3>
+														<div class="category__options">
+															<label for="option" class="category__option">
+																Economy
+																<input readonly name="class" class="category__input" value="economy" checked type="radio">
+															</label>
+															<label for="option" class="category__option">
+																Premium
+																<input readonly name="class" class="category__input" value="premium" type="radio">
+															</label>
+															<label for="option" class="category__option">
+																Business
+																<input readonly name="class" class="category__input" value="business" type="radio">
+															</label>
+															<label for="option" class="category__option">
+																First
+																<input readonly  name="class" class="category__input" value="first" type="radio">
+															</label>
+														</div>
+													</div>
+													<div class="dropdown__category category">
+														<h3 class="category__title category__title-big">Bags</h3>
+														<div class="category__counter">
+															<button type="button" class="category__decrease">-</button>
+															<input type="text" name="bags" value="1" class="category__input" readonly>
+															<button type="button" class="category__increase">+</button>
+														</div>
+													</div>
+													<button type="submit" class="dropdown__apply">Apply</button>
+												</div>
+											</section>
+											<button type="submit" class="form__group search">Search</button>
+										</div>
+										<p class="form__message">
+											Powered by 
+											<a href="https://www.kayak.com/flights" target="_blank"><svg width="100%" height="100%" viewBox="0 0 125 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" style="width:inherit;height:inherit;line-height:inherit;color:inherit"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 24h23.936V0H0v24zm25.266 0h23.936V0H25.266v24zm49.202 0H50.532V0h23.936v24zm1.33 0h23.936V0H75.798v24zM125 24h-23.936V0H125v24z" fill="#FF690F"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.287 11.549V6H7.38v12h2.907v-5.548L13.348 18h3.208l-3.33-6 3.33-6h-3.208l-3.061 5.549zm24.785 4.724L34.552 18h-3.104l3.947-12h3.696l3.93 12h-3.194l-.52-1.727h-4.235zm2.117-6.837l-1.4 4.48h2.8l-1.4-4.48zM63.98 18h-2.906v-5.29L57.144 6h3.463l1.938 3.688L64.447 6h3.409l-3.876 6.71V18zm21.624-1.727L85.084 18h-3.105l3.948-12h3.696l3.93 12h-3.194l-.52-1.727h-4.235zm2.117-6.837l-1.4 4.48h2.8l-1.4-4.48zm23.63 2.113V6h-2.907v12h2.907v-5.548L114.412 18h3.208l-3.33-6 3.33-6h-3.208l-3.061 5.549z" fill="#FAFAFC"></path> </svg></a>
+										</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>HOME</h3>
+										<ul class="style2">
+											<li><a href="#">Welcome</a></li>
+											<li><a href="#features-wrapper">Our destinations</a></li>
+											<li><a href="#">Classes info</a></li>
+											<li><a href="#classes">Learn about our flight classes</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>ABOUT US</h3>
+										<ul class="style2">
+											<li><a href="#">About us </a></li>
+											<li><a href="#">Careers</a></li>
+											<li><a href="#">Our planet</a></li>
+											<li><a href="#">Our people</a></li>
+											<li><a href="#">Our communities</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>FLIGHTS</h3>
+										<ul class="style2">
+											<li><a href="#">Etiam feugiat condimentum</a></li>
+											<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+											<li><a href="#">Sed porttitor cras in erat nec</a></li>
+											<li><a href="#">Felis varius pellentesque potenti</a></li>
+											<li><a href="#">Nullam scelerisque blandit leo</a></li>
+										</ul>
+									</section>
+									
+									<section class="widget links">
+										<h3>CLASSES</h3>
+										<ul class="style2">
+											<li><a href="#">flight classes </a></li>
+									
+											<li><a href="#">Economy class</a></li> 36 inches (3 feet) of leg room
+											<li><a href="#"> Premium Economy class</a></li> 48 inches (4 feet) of leg room
+											<li><a href="#"> Business class</a></li> 72 inches (6 feet) of leg room
+											<li><a href="#"> First class</a></li> full private area with seat laying into bed and infinite leg room
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>CONTACT</h3>
+										<ul>
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+										</ul>
+										<p>4000 Edison Ave,<br />
+										Sacramento, CA, 95821,<br />
+										Room E4<br />
+										(800) 555-0000</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>2025 The Zephyr group. All rights reserved. </li><li>design: <a href="http://html5up.net">HTML5 UP </a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script type="module" src="assets/js/main.js"></script>
+
+	</body>
+</html>

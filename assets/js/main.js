@@ -328,7 +328,7 @@ const datesObj = {
 	"tommorow": {
 		year: year,
 		month: month,
-		day: ++day,
+		day: day,
 		date: `${year}-${month}-${day}`,
 		valid: true,
 	},
@@ -354,8 +354,8 @@ trip.addEventListener("change", function(e){
 	}
 })
 
-const today = `${datesObj.today.year}-${datesObj.today.month}-${datesObj.today.day}`;
-const tomorrow = `${datesObj.tommorow.year}-${datesObj.tommorow.month}-${datesObj.tommorow.day}`;
+const today = `${datesObj.today.date}`;
+const tomorrow = `${datesObj.tommorow.date}`;
 
 const initDepature = today;
 const initReturn = tomorrow;
@@ -401,6 +401,9 @@ function checkInputs(event, {today, tommorow}, name){
 	switch (true) {
 		case !isDayOk || !isMonthOk:
 			datesError.textContent = "Please, provide an appropriate date!"
+			break;
+		case !isMonthOk:
+			datesError.textContent = `You cannot view flights from the past!`
 			break;
 		case !isYearOk:
 			datesError.textContent = `You can only view flights of this year!`
